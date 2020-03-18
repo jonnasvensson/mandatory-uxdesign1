@@ -1,0 +1,46 @@
+div {
+    margin: 30px;
+}
+
+input {
+    position: absolute;
+    width: 280px;
+    height: 56px;
+    border: none;
+    box-sizing: border-box;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom: 0.1rem solid black;
+    background-color: #F2F2F2;
+    font-size: 12px;
+    padding: 12px;
+}
+
+input:disabled {
+    background-color: black;
+}
+
+input:hover {
+    background-color: #E9E5E5;
+}
+
+input:focus {
+    border-bottom: 0.15rem solid #6200ee;
+    background-color: #D3CFCF;
+    padding-bottom: 4px;
+}
+
+input:focus+label {
+    color: #6200ee;
+    transition: ease-out 0.2s;
+    line-height: 0px;
+    font-size: 10px;
+}
+
+label {
+    position: absolute;
+    padding: 12px;
+    font-family: Roboto;
+    line-height: 28px;
+    color: #575353;
+}
