@@ -5,14 +5,17 @@ export default function TextField({ disabled }) {
 
     return(
         <>
-            <div>
+            <div className={styles.div}>
                 <input 
                 className={styles.input} 
                 type="text" 
                 disabled={disabled}
+                required
                 />
                 <label 
-                className={styles.label}>Title</label>
+                className={styles.label}
+                disabled={disabled}
+                >Title</label>
             </div>
         </>
     )
