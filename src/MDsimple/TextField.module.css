@@ -1,5 +1,15 @@
-.div {
-    margin: 30px;
+.container {
+    border-left: 3px solid grey;
+    padding: 0 0 0 30px;
+}
+
+.h4 {
+    font-family: Roboto;
+}
+
+.h5 {
+    color: #575353;
+    font-family: Roboto;
 }
 
 .input {
@@ -9,15 +19,20 @@
     border: none;
     box-sizing: border-box;
     border-radius: 0.3rem 0.3rem 0 0;
-    border-bottom: 0.1rem solid black;
-    background-color: #F2F2F2;
+    border-bottom: 0.1rem solid #787474;
+    background-color: #EDE1E1;
     font-size: 16px;
     padding: 12px;
 }
 
+.input:hover {
+    background-color: #E1D8D8;
+    border-bottom: 0.1rem solid black;
+}
+
 .input:focus {
     border-bottom: 0.15rem solid #6200ee;
-    background-color: #D3CFCF;
+    background-color: #C8C0C0;
     padding-bottom: 4px;
 }
 
@@ -45,6 +60,27 @@
     box-sizing: border-box;
     border-radius: 0.3rem 0.3rem 0 0;
     background-color: #E7E4E4;
+    font-size: 16px;
+    padding: 12px;
+    color: #A3A0A0;
+}
+
+
+/*  Disabled */
+
+.containerTextFieldDis {
+    margin-top: 100px;
+}
+
+.inputDis,
+.inputDis:disabled+.labelDis {
+    position: absolute;
+    width: 280px;
+    height: 56px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 0.3rem 0.3rem 0 0;
+    background-color: #E0E0E0;
     font-size: 16px;
     padding: 12px;
     color: #A3A0A0;

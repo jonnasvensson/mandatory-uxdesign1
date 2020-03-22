@@ -1,0 +1,26 @@
+.App {
+    min-width: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 8px;
+    font-family: Roboto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 7px 20px #C8C0C0;
+}
+
+.container {
+    display: flex;
+}
