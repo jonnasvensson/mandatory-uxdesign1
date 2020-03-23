@@ -59,7 +59,11 @@
     margin-top: 100px;
 }
 
-.input:disabled+label {
+.input:disabled {
     background-color: #C6C1C1;
+    border-bottom: none;
+}
+
+.input:disabled+label {
     color: #A3A0A0;
 }
