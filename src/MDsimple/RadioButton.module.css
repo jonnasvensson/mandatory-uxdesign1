@@ -1,6 +1,24 @@
 .container {
     border-left: 3px solid grey;
     padding: 0 0 0 30px;
+    position: relative;
+}
+
+.circle {
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 180px;
+}
+
+.topContainer {
+    height: 130px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .h4 {
@@ -47,7 +65,9 @@
 /* Disabled */
 
 .containerDis {
-    margin-top: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .input[type="radio"][disabled]+.label {

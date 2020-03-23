@@ -1,6 +1,22 @@
 .container {
     border-left: 3px solid grey;
     padding: 0 0 0 30px;
+    position: relative;
+}
+
+.circle {
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 80px;
+}
+
+.topContainer {
+    height: 130px;
+    width: 200px;
 }
 
 .h4 {
@@ -61,10 +77,6 @@
 
 /* Disabled */
 
-.containerDis {
-    margin-top: 100px;
-}
-
 .input:disabled {
     background-color: #DFDEDE;
 }
@@ -79,6 +91,7 @@
 .input:disabled:checked {
     background-color: #C09FEF;
     cursor: default;
+    margin-left: 60px;
 }
 
 .input:disabled:checked::before {

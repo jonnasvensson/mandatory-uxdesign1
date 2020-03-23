@@ -1,6 +1,21 @@
 .container {
     border-left: 3px solid grey;
     padding: 0 0 0 30px;
+    position: relative;
+}
+
+.circle {
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: 29px;
+}
+
+.topContainer {
+    height: 130px;
 }
 
 .h4 {
@@ -54,10 +69,6 @@
 
 
 /*  Disabled */
-
-.containerTextFieldDis {
-    margin-top: 100px;
-}
 
 .input:disabled {
     background-color: #C6C1C1;

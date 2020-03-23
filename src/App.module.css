@@ -6,21 +6,30 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    width: 100vw;
 }
 
 h1 {
     text-align: center;
-    width: 20rem;
+    color: whitesmoke;
     height: 5rem;
-    border-radius: 8px;
+    width: 100vw;
     font-family: Roboto;
-    background-color: whitesmoke;
+    background-color: grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 6px 7px 20px #C8C0C0;
+    margin: 0;
 }
 
 .container {
     display: flex;
+}
+
+.footer {
+    height: 2rem;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
 }

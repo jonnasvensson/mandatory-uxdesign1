@@ -7,14 +7,15 @@ export default function Checkbox({ disabled }) {
     return (
         <>
             <div className={styles.container}>
-                <h4 className={styles.h4}>Checkbox</h4>
-                <div className={styles.checkbox}>
-                    <input className={styles.input}
-                        type="checkbox" id="checkboxInput"
-                        disabled={disabled} />
+            <div className={styles.circle}></div>
+            <h4 className={styles.h4}>Checkbox</h4>
+                <div className={styles.topContainer}>
+                    <div className={styles.checkbox}>
+                        <input className={styles.input}
+                            type="checkbox" id="checkboxInput"
+                            disabled={disabled} />
+                    </div>
                 </div>
-
-                <div className={styles.containerDis}>
                     <h5 className={styles.h5}>Disabled</h5>
                     <div className={styles.checkboxContainer}>
                         <div className={styles.checkbox}>
@@ -44,7 +45,6 @@ export default function Checkbox({ disabled }) {
                             </label>
                         </div>
                     </div>
-                </div>
             </div>
         </>
     )
