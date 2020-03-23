@@ -19,7 +19,6 @@
     border: 2px solid #0000008a;
     border-radius: 4px;
     appearance: none;
-    outline: 0;
     cursor: pointer;
 }
 
@@ -62,15 +61,10 @@
 
 .checkbox input[type="checkbox"]:checked:disabled {
     color: white;
-    border-color: grey;
-    background: grey;
+    border-color: #C6C1C1;
+    background: #C6C1C1;
 }
 
 .checkbox input[type="checkbox"]:disabled {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    border: 2px solid #0000008a;
-    border-radius: 4px;
-    appearance: none;
+    border: 2px solid #C6C1C1;
 }

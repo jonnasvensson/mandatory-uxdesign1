@@ -12,40 +12,48 @@
     font-family: Roboto;
 }
 
-.label {
+.input {
+    appearance: none;
     width: 36px;
     height: 15px;
     border-radius: 8px;
-    background-color: #78A3CF;
-    position: relative;
-    display: inline-block;
-}
-
-.input {
-    display: none;
-}
-
-.slider:before {
+    background-color: #C6C2C2;
     position: absolute;
+    cursor: pointer;
+}
+
+.input::before {
     content: "";
+    position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    left: 0px;
-    bottom: -2px;
+    top: -2.5px;
     background-color: white;
     box-shadow: 0px 0px 0px 0.5px #787474;
     transition: 0.4s;
     cursor: pointer;
 }
 
-.input:checked+.slider {
-    background-color: #6200ee89;
-    border-radius: 50%;
+.input:checked {
+    appearance: none;
+    width: 36px;
+    height: 15px;
     border-radius: 8px;
+    background-color: #6200ee89;
+    position: absolute;
+    cursor: pointer;
 }
 
-.input:checked+.slider:before {
+.input:checked::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0.5px #787474;
+    transition: 0.4s;
+    cursor: pointer;
     background-color: #6200eeff;
     transform: translateX(20px);
 }
@@ -55,4 +63,25 @@
 
 .containerDis {
     margin-top: 100px;
+}
+
+.input:disabled {
+    background-color: #DFDEDE;
+}
+
+.input:disabled::before {
+    background-color: #C6C1C1;
+    box-shadow: 0px 0px 0px 0.5px white;
+    transition: 0.4s;
+    cursor: default;
+}
+
+.input:disabled:checked {
+    background-color: #C09FEF;
+    cursor: default;
+}
+
+.input:disabled:checked::before {
+    cursor: default;
+    background-color: #A678E1;
 }

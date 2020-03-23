@@ -24,8 +24,10 @@ export default function RadioButton({ disabled }) {
                     </label>
                     <input className={styles.input} 
                     type="radio" 
+                    checked
                     disabled />
                     <label className={styles.label} 
+                    checked
                     disabled>
                     </label>
 
