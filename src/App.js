@@ -26,7 +26,6 @@ function App() {
           <Route path="/radioButton" component={RadioButton} />
         </div>
       </div>
-      <footer className={styles.footer}></footer>
     </Router>
 
   );
