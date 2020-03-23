@@ -11,7 +11,7 @@ export default function Navigate() {
                 <Link className={styles.a} to="/textField">Text field</Link>
                 <Link className={styles.a} to="/switch">Switch</Link>
                 <Link className={styles.a} to='/checkbox'>Checkbox</Link>
-                <Link className={styles.a} to='/radioButton'>RadioButton</Link>
+                <Link className={styles.a} to='/radioButton'>Radio Button</Link>
             </nav>
         </>
     )

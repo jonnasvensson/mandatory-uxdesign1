@@ -1,7 +1,6 @@
 import React from 'react';
 
 import styles from './Switch.module.css'
-import Navigate from './Navigate'
 
 
 export default function Switch({ disabled }) {
@@ -10,11 +9,11 @@ export default function Switch({ disabled }) {
             <div className={styles.container}>
                     <h4 className={styles.h4}>Switch</h4>
                     <label 
-                    className={styles.switch}
+                    className={styles.label}
                     disabled={disabled}
                     >
                     <input 
-                    className={styles.inputSwitch} 
+                    className={styles.input} 
                     type="checkbox" 
                     disabled={disabled}
                     />
@@ -23,13 +22,13 @@ export default function Switch({ disabled }) {
                 <div className={styles.containerDis}>
                     <h5 className={styles.h5}>Disabled</h5>
                     <label
-                    className={styles.switchDis}
+                    className={styles.label}
                     disabled>
                     <input
-                    className={styles.inputSwitchDis}
+                    className={styles.input}
                     type="checkbox"
                     disabled />
-                    <div className={styles.sliderDis}></div>
+                    <div className={styles.slider}></div>
                     </label>
                 </div>
             </div>

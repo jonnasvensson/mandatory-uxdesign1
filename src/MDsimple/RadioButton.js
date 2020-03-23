@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './RadioButton.module.css'
 
 
-export default function RadioButton() {
+export default function RadioButton({ disabled }) {
     return (
         <>
             <div className={styles.container}>
@@ -13,13 +13,22 @@ export default function RadioButton() {
 
                 <input className={styles.input} type="radio" id="secondRadioButton" name="selector" />
                 <label className={styles.label} htmlFor="secondRadioButton"></label>
+
                 <div className={styles.containerDis}>
                     <h5 className={styles.h5}>Disabled</h5>
-                    <input className={styles.inputDis} type="radio" id="firstRadioButton" name="selector" />
-                    <label className={styles.labelDis} htmlFor="firstRadioButton"></label>
+                    <input className={styles.input} 
+                    type="radio" 
+                    disabled />
+                    <label className={styles.label} 
+                    disabled>
+                    </label>
+                    <input className={styles.input} 
+                    type="radio" 
+                    disabled />
+                    <label className={styles.label} 
+                    disabled>
+                    </label>
 
-                    <input className={styles.inputDis} type="radio" id="secondRadioButton" name="selector" />
-                    <label className={styles.labelDis} htmlFor="secondRadioButton"></label>
                 </div>
             </div>
         </>

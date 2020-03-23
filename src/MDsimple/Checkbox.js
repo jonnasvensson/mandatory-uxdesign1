@@ -12,8 +12,6 @@ export default function Checkbox({ disabled }) {
                     <input className={styles.input}
                         type="checkbox" id="checkboxInput"
                         disabled={disabled} />
-                    <label className={styles.label}
-                        htmlFor="checkboxInput"></label>
                 </div>
 
                 <div className={styles.containerDis}>

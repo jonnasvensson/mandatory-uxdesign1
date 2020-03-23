@@ -12,27 +12,17 @@
     font-family: Roboto;
 }
 
-.switch {
+.label {
     width: 36px;
     height: 15px;
     border-radius: 8px;
-    background-color: #DDD7D7;
+    background-color: #78A3CF;
     position: relative;
     display: inline-block;
 }
 
-.inputSwitch {
+.input {
     display: none;
-}
-
-.slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0px;
-    bottom: 0px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 .slider:before {
@@ -46,15 +36,16 @@
     background-color: white;
     box-shadow: 0px 0px 0px 0.5px #787474;
     transition: 0.4s;
+    cursor: pointer;
 }
 
-.inputSwitch:checked+.slider {
+.input:checked+.slider {
     background-color: #6200ee89;
     border-radius: 50%;
     border-radius: 8px;
 }
 
-.inputSwitch:checked+.slider:before {
+.input:checked+.slider:before {
     background-color: #6200eeff;
     transform: translateX(20px);
 }
@@ -64,35 +55,4 @@
 
 .containerDis {
     margin-top: 100px;
-}
-
-.switchDis {
-    width: 36px;
-    height: 15px;
-    border-radius: 8px;
-    background-color: grey;
-    position: relative;
-    display: inline-block;
-}
-
-.sliderDis:disabled {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0px;
-    bottom: 0px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.sliderDis:before {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    left: 0px;
-    bottom: -2px;
-    background-color: darkgrey;
-    transition: 0.4s;
 }
