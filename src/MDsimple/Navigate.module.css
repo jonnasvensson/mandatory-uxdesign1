@@ -12,3 +12,7 @@ a {
     font-family: Roboto;
     color: #575353;
 }
+
+a:focus {
+    text-decoration: underline;
+}
